@@ -1,10 +1,15 @@
 [tool.poetry]
-name = "bible-semantics"
-version = "0.1.0"
+name = "Bible Semantics"
+version = "0.1.1"
 description = "A framework for semantic research on the Christian bible."
 authors = ["Markus Kreitzer <markus@kreitzer.dev>"]
 license = "Copyright 2025 Markus Kreitzer"
 readme = "README.md"
+
+packages = [
+    { include = "bible_semantics", from = "src" }
+]
+
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -15,6 +20,11 @@ ollama = "^0.4.7"
 aiohttp = "^3.11.13"
 tqdm = "^4.67.1"
 
+[tool.poetry.dev-dependencies]
+pytest = "^7.2"
+
+[tool.poetry.scripts]
+embed = "bible_semantics.main:main"
 
 [build-system]
 requires = ["poetry-core"]
