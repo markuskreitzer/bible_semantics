@@ -1,5 +1,6 @@
 import asyncio
 import json
+import os
 from pathlib import Path
 import aiohttp
 import pandas as pd
@@ -8,7 +9,7 @@ import argparse
 
 # Configuration for the model, endpoints, and batching.
 MODEL = 'nomic-embed-text:latest'
-ENDPOINTS = ['http://localhost:11434', 'http://delos:11434']
+ENDPOINTS = os.environ.get('ENDPOINTS', "http://localhost:11434").split(",")
 BATCH_SIZE = 100   # Number of texts per batch
 RETRIES =  5       # Number of retry attempts for each batch
 DELAY = 30          # Delay in seconds between retries
