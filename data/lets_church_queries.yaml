@@ -1,0 +1,1332 @@
+# Bible Verse Retrieval Test Suite - Ambiguous/Paraphrased Queries
+# Tests focus on textual variations, fuzzy recall, and cross-translation memory
+
+- query: "isn't there a verse about god is love?"
+  expected: ["1 John 4:8", "1 John 4:16"]
+- query: "god is love"
+  expected: ["1 John 4:8", "1 John 4:16"]
+
+- query: "verse about they meant bad but god meant good (rough paraphrase)"
+  expected: ["Genesis 50:20"]
+- query: "they meant bad but god meant good"
+  expected: ["Genesis 50:20"]
+
+- query: "isn't there a verse about god loves the world?"
+  expected: ["John 3:16"]
+- query: "god loves the world"
+  expected: ["John 3:16"]
+
+- query: "isn't there a verse about god loved the whole world?"
+  expected: ["John 3:16"]
+- query: "god loved the whole world"
+  expected: ["John 3:16"]
+
+- query: "isn't there a verse about in the beginning god created?"
+  expected: ["Genesis 1:1"]
+- query: "in the beginning god created"
+  expected: ["Genesis 1:1"]
+
+- query: "isn't there a verse about jesus cried?"
+  expected: ["John 11:35"]
+- query: "jesus cried"
+  expected: ["John 11:35"]
+
+- query: "verse about i can do all things through christ (rough paraphrase)"
+  expected: ["Philippians 4:13"]
+- query: "i can do all things through christ"
+  expected: ["Philippians 4:13"]
+
+- query: "isn't there a verse about the lord is my shepherd?"
+  expected: ["Psalms 23:1"]
+- query: "the lord is my shepherd"
+  expected: ["Psalms 23:1"]
+
+- query: "what's that line about be still and know that i am god — maybe worded differently in some translations?"
+  expected: ["Psalms 46:10"]
+- query: "be still and know that i am god"
+  expected: ["Psalms 46:10"]
+
+- query: "isn't there a verse about everything works together for good?"
+  expected: ["Romans 8:28"]
+- query: "everything works together for good"
+  expected: ["Romans 8:28"]
+
+- query: "verse about god won't give you more than you can handle (rough paraphrase)"
+  expected: ["1 Corinthians 10:13"]
+- query: "god won't give you more than you can handle"
+  expected: ["1 Corinthians 10:13"]
+
+- query: "isn't there a verse about faith without works is dead?"
+  expected: ["James 2:26"]
+- query: "faith without works is dead"
+  expected: ["James 2:26"]
+
+- query: "isn't there a verse about money is evil?"
+  expected: ["1 Timothy 6:10"]
+- query: "money is evil"
+  expected: ["1 Timothy 6:10"]
+
+- query: "isn't there a verse about pride comes before destruction?"
+  expected: ["Proverbs 16:18"]
+- query: "pride comes before destruction"
+  expected: ["Proverbs 16:18"]
+
+- query: "verse about god so loved the whole world (rough paraphrase)"
+  expected: ["John 3:16"]
+- query: "god so loved the whole world"
+  expected: ["John 3:16"]
+
+- query: "isn't there a verse about jesus is weeping?"
+  expected: ["John 11:35"]
+- query: "jesus is weeping"
+  expected: ["John 11:35"]
+
+- query: "isn't there a verse about the lord was my shepherd?"
+  expected: ["Psalms 23:1"]
+- query: "the lord was my shepherd"
+  expected: ["Psalms 23:1"]
+
+- query: "isn't there a verse about christ strengthens me?"
+  expected: ["Philippians 4:13"]
+- query: "christ strengthens me"
+  expected: ["Philippians 4:13"]
+
+- query: "isn't there a verse about armour of god?"
+  expected: ["Ephesians 6:11", "Ephesians 6:13"]
+- query: "armour of god"
+  expected: ["Ephesians 6:11", "Ephesians 6:13"]
+
+- query: "isn't there a verse about fruit of the spirit?"
+  expected: ["Galatians 5:22"]
+- query: "fruit of the spirit"
+  expected: ["Galatians 5:22"]
+
+- query: "what's that line about love is patient love is kind — maybe worded differently in some translations?"
+  expected: ["1 Corinthians 13:4"]
+- query: "love is patient love is kind"
+  expected: ["1 Corinthians 13:4"]
+
+- query: "isn't there a verse about turn the other cheek?"
+  expected: ["Matthew 5:39"]
+- query: "turn the other cheek"
+  expected: ["Matthew 5:39"]
+
+- query: "isn't there a verse about eye for an eye?"
+  expected: ["Exodus 21:24", "Matthew 5:38"]
+- query: "eye for an eye"
+  expected: ["Exodus 21:24", "Matthew 5:38"]
+
+- query: "isn't there a verse about god is light?"
+  expected: ["1 John 1:5"]
+- query: "god is light"
+  expected: ["1 John 1:5"]
+
+- query: "isn't there a verse about made new?"
+  expected: ["2 Corinthians 5:17"]
+- query: "made new"
+  expected: ["2 Corinthians 5:17"]
+
+- query: "isn't there a verse about water of life?"
+  expected: ["John 4:10", "John 7:38"]
+- query: "water of life"
+  expected: ["John 4:10", "John 7:38"]
+
+- query: "isn't there a verse about bread of life?"
+  expected: ["John 6:35"]
+- query: "bread of life"
+  expected: ["John 6:35"]
+
+- query: "isn't there a verse about i am the way?"
+  expected: ["John 14:6"]
+- query: "i am the way"
+  expected: ["John 14:6"]
+
+- query: "isn't there a verse about david and goliath?"
+  expected: ["1 Samuel 17:45"]
+- query: "david and goliath"
+  expected: ["1 Samuel 17:45"]
+
+- query: "where does it say something like 'daniel in the lions den'?"
+  expected: ["Daniel 6:22"]
+- query: "daniel in the lions den"
+  expected: ["Daniel 6:22"]
+
+- query: "isn't there a verse about jonah and the whale?"
+  expected: ["Jonah 1:17"]
+- query: "jonah and the whale"
+  expected: ["Jonah 1:17"]
+
+- query: "isn't there a verse about moses parts the sea?"
+  expected: ["Exodus 14:21"]
+- query: "moses parts the sea"
+  expected: ["Exodus 14:21"]
+
+- query: "isn't there a verse about jesus walks on water?"
+  expected: ["Matthew 14:25"]
+- query: "jesus walks on water"
+  expected: ["Matthew 14:25"]
+
+- query: "isn't there a verse about don't be worried?"
+  expected: ["Philippians 4:6"]
+- query: "don't be worried"
+  expected: ["Philippians 4:6"]
+
+- query: "isn't there a verse about don't worry about tomorrow?"
+  expected: ["Matthew 6:34"]
+- query: "don't worry about tomorrow"
+  expected: ["Matthew 6:34"]
+
+- query: "isn't there a verse about cast your cares?"
+  expected: ["1 Peter 5:7"]
+- query: "cast your cares"
+  expected: ["1 Peter 5:7"]
+
+- query: "isn't there a verse about peace beyond understanding?"
+  expected: ["Philippians 4:7"]
+- query: "peace beyond understanding"
+  expected: ["Philippians 4:7"]
+
+- query: "isn't there a verse about joy comes in the morning?"
+  expected: ["Psalms 30:5"]
+- query: "joy comes in the morning"
+  expected: ["Psalms 30:5"]
+
+- query: "isn't there a verse about love your enemies?"
+  expected: ["Matthew 5:44"]
+- query: "love your enemies"
+  expected: ["Matthew 5:44"]
+
+- query: "isn't there a verse about honor your parents?"
+  expected: ["Exodus 20:12"]
+- query: "honor your parents"
+  expected: ["Exodus 20:12"]
+
+- query: "isn't there a verse about don't judge?"
+  expected: ["Matthew 7:1"]
+- query: "don't judge"
+  expected: ["Matthew 7:1"]
+
+- query: "isn't there a verse about forgive seventy-seven times?"
+  expected: ["Matthew 18:22"]
+- query: "forgive seventy-seven times"
+  expected: ["Matthew 18:22"]
+
+- query: "isn't there a verse about go and make disciples?"
+  expected: ["Matthew 28:19"]
+- query: "go and make disciples"
+  expected: ["Matthew 28:19"]
+
+- query: "isn't there a verse about plans to prosper you?"
+  expected: ["Jeremiah 29:11"]
+- query: "plans to prosper you"
+  expected: ["Jeremiah 29:11"]
+
+- query: "isn't there a verse about no weapon formed against you?"
+  expected: ["Isaiah 54:17"]
+- query: "no weapon formed against you"
+  expected: ["Isaiah 54:17"]
+
+- query: "isn't there a verse about renew their strength?"
+  expected: ["Isaiah 40:31"]
+- query: "renew their strength"
+  expected: ["Isaiah 40:31"]
+
+- query: "verse about never leave you nor forsake you (rough paraphrase)"
+  expected: ["Hebrews 13:5", "Deuteronomy 31:6"]
+- query: "never leave you nor forsake you"
+  expected: ["Hebrews 13:5", "Deuteronomy 31:6"]
+
+- query: "verse about put the kingdom first of god (rough paraphrase)"
+  expected: ["Matthew 6:33"]
+- query: "put the kingdom first of god"
+  expected: ["Matthew 6:33"]
+
+- query: "verse about walk by faith not by sight (rough paraphrase)"
+  expected: ["2 Corinthians 5:7"]
+- query: "walk by faith not by sight"
+  expected: ["2 Corinthians 5:7"]
+
+- query: "verse about greater is he that is in you (rough paraphrase)"
+  expected: ["1 John 4:4"]
+- query: "greater is he that is in you"
+  expected: ["1 John 4:4"]
+
+- query: "isn't there a verse about my grace is enough?"
+  expected: ["2 Corinthians 12:9"]
+- query: "my grace is enough"
+  expected: ["2 Corinthians 12:9"]
+
+- query: "isn't there a verse about be brave and strong?"
+  expected: ["Joshua 1:9"]
+- query: "be brave and strong"
+  expected: ["Joshua 1:9"]
+
+- query: "what's that line about trust in the lord with all your heart — maybe worded differently in some translations?"
+  expected: ["Proverbs 3:5"]
+- query: "trust in the lord with all your heart"
+  expected: ["Proverbs 3:5"]
+
+- query: "isn't there a verse about sin pays out death?"
+  expected: ["Romans 6:23"]
+- query: "sin pays out death"
+  expected: ["Romans 6:23"]
+
+- query: "isn't there a verse about all have sinned?"
+  expected: ["Romans 3:23"]
+- query: "all have sinned"
+  expected: ["Romans 3:23"]
+
+- query: "verse about by grace you have been saved (rough paraphrase)"
+  expected: ["Ephesians 2:8"]
+- query: "by grace you have been saved"
+  expected: ["Ephesians 2:8"]
+
+- query: "verse about i am the raising from the dead and the life (rough paraphrase)"
+  expected: ["John 11:25"]
+- query: "i am the raising from the dead and the life"
+  expected: ["John 11:25"]
+
+- query: "verse about ask and it will be given (rough paraphrase)"
+  expected: ["Matthew 7:7"]
+- query: "ask and it will be given"
+  expected: ["Matthew 7:7"]
+
+- query: "verse about knock and the door will be opened (rough paraphrase)"
+  expected: ["Matthew 7:7"]
+- query: "knock and the door will be opened"
+  expected: ["Matthew 7:7"]
+
+- query: "verse about where two or three are gathered (rough paraphrase)"
+  expected: ["Matthew 18:20"]
+- query: "where two or three are gathered"
+  expected: ["Matthew 18:20"]
+
+- query: "isn't there a verse about the truth makes you free?"
+  expected: ["John 8:32"]
+- query: "the truth makes you free"
+  expected: ["John 8:32"]
+
+- query: "isn't there a verse about let there be light?"
+  expected: ["Genesis 1:3"]
+- query: "let there be light"
+  expected: ["Genesis 1:3"]
+
+- query: "verse about man will not live by bread alone (rough paraphrase)"
+  expected: ["Matthew 4:4", "Deuteronomy 8:3"]
+- query: "man will not live by bread alone"
+  expected: ["Matthew 4:4", "Deuteronomy 8:3"]
+
+- query: "isn't there a verse about the last will be first?"
+  expected: ["Matthew 20:16"]
+- query: "the last will be first"
+  expected: ["Matthew 20:16"]
+
+- query: "verse about many are called but few are chosen (rough paraphrase)"
+  expected: ["Matthew 22:14"]
+- query: "many are called but few are chosen"
+  expected: ["Matthew 22:14"]
+
+- query: "verse about it is easier for a camel (rough paraphrase)"
+  expected: ["Matthew 19:24"]
+- query: "it is easier for a camel"
+  expected: ["Matthew 19:24"]
+
+- query: "verse about happy are the poor in spirit (rough paraphrase)"
+  expected: ["Matthew 5:3"]
+- query: "happy are the poor in spirit"
+  expected: ["Matthew 5:3"]
+
+- query: "isn't there a verse about salt of the earth?"
+  expected: ["Matthew 5:13"]
+- query: "salt of the earth"
+  expected: ["Matthew 5:13"]
+
+- query: "isn't there a verse about light of the world?"
+  expected: ["Matthew 5:14"]
+- query: "light of the world"
+  expected: ["Matthew 5:14"]
+
+- query: "isn't there a verse about narrow is the gate?"
+  expected: ["Matthew 7:14"]
+- query: "narrow is the gate"
+  expected: ["Matthew 7:14"]
+
+- query: "isn't there a verse about wolves in sheep's clothing?"
+  expected: ["Matthew 7:15"]
+- query: "wolves in sheep's clothing"
+  expected: ["Matthew 7:15"]
+
+- query: "verse about you'll know them by what they produce (rough paraphrase)"
+  expected: ["Matthew 7:16"]
+- query: "you'll know them by what they produce"
+  expected: ["Matthew 7:16"]
+
+- query: "isn't there a verse about house built on rock?"
+  expected: ["Matthew 7:24"]
+- query: "house built on rock"
+  expected: ["Matthew 7:24"]
+
+- query: "isn't there a verse about faith of a mustard seed?"
+  expected: ["Matthew 17:20"]
+- query: "faith of a mustard seed"
+  expected: ["Matthew 17:20"]
+
+- query: "isn't there a verse about where your treasure is?"
+  expected: ["Matthew 6:21"]
+- query: "where your treasure is"
+  expected: ["Matthew 6:21"]
+
+- query: "isn't there a verse about cannot serve two masters?"
+  expected: ["Matthew 6:24"]
+- query: "cannot serve two masters"
+  expected: ["Matthew 6:24"]
+
+- query: "isn't there a verse about look at the lilies?"
+  expected: ["Matthew 6:28"]
+- query: "look at the lilies"
+  expected: ["Matthew 6:28"]
+
+- query: "isn't there a verse about pearl of great price?"
+  expected: ["Matthew 13:46"]
+- query: "pearl of great price"
+  expected: ["Matthew 13:46"]
+
+- query: "isn't there a verse about good samaritan?"
+  expected: ["Luke 10:33"]
+- query: "good samaritan"
+  expected: ["Luke 10:33"]
+
+- query: "isn't there a verse about prodigal son?"
+  expected: ["Luke 15:20"]
+- query: "prodigal son"
+  expected: ["Luke 15:20"]
+
+- query: "isn't there a verse about lost sheep?"
+  expected: ["Luke 15:4"]
+- query: "lost sheep"
+  expected: ["Luke 15:4"]
+
+- query: "verse about whoever believes in him will not perish (rough paraphrase)"
+  expected: ["John 3:16"]
+- query: "whoever believes in him will not perish"
+  expected: ["John 3:16"]
+
+- query: "isn't there a verse about born from above?"
+  expected: ["John 3:3"]
+- query: "born from above"
+  expected: ["John 3:3"]
+
+- query: "isn't there a verse about spirit blows where it wishes?"
+  expected: ["John 3:8"]
+- query: "spirit blows where it wishes"
+  expected: ["John 3:8"]
+
+- query: "isn't there a verse about god shows no favoritism?"
+  expected: ["Romans 2:11", "Acts 10:34"]
+- query: "god shows no favoritism"
+  expected: ["Romans 2:11", "Acts 10:34"]
+
+- query: "verse about all things are possible with god (rough paraphrase)"
+  expected: ["Matthew 19:26", "Mark 10:27"]
+- query: "all things are possible with god"
+  expected: ["Matthew 19:26", "Mark 10:27"]
+
+- query: "isn't there a verse about perfect love drives out fear?"
+  expected: ["1 John 4:18"]
+- query: "perfect love drives out fear"
+  expected: ["1 John 4:18"]
+
+- query: "verse about we love because he first loved us (rough paraphrase)"
+  expected: ["1 John 4:19"]
+- query: "we love because he first loved us"
+  expected: ["1 John 4:19"]
+
+- query: "isn't there a verse about kids obey your parents?"
+  expected: ["Ephesians 6:1"]
+- query: "kids obey your parents"
+  expected: ["Ephesians 6:1"]
+
+- query: "isn't there a verse about husbands love your wives?"
+  expected: ["Ephesians 5:25"]
+- query: "husbands love your wives"
+  expected: ["Ephesians 5:25"]
+
+- query: "isn't there a verse about be subject to one another?"
+  expected: ["Ephesians 5:21"]
+- query: "be subject to one another"
+  expected: ["Ephesians 5:21"]
+
+- query: "isn't there a verse about put on the full armor?"
+  expected: ["Ephesians 6:11"]
+- query: "put on the full armor"
+  expected: ["Ephesians 6:11"]
+
+- query: "verse about our struggle is not against flesh and blood (rough paraphrase)"
+  expected: ["Ephesians 6:12"]
+- query: "our struggle is not against flesh and blood"
+  expected: ["Ephesians 6:12"]
+
+- query: "isn't there a verse about always rejoice?"
+  expected: ["1 Thessalonians 5:16"]
+- query: "always rejoice"
+  expected: ["1 Thessalonians 5:16"]
+
+- query: "isn't there a verse about pray constantly?"
+  expected: ["1 Thessalonians 5:17"]
+- query: "pray constantly"
+  expected: ["1 Thessalonians 5:17"]
+
+- query: "isn't there a verse about give thanks in all circumstances?"
+  expected: ["1 Thessalonians 5:18"]
+- query: "give thanks in all circumstances"
+  expected: ["1 Thessalonians 5:18"]
+
+- query: "isn't there a verse about test everything?"
+  expected: ["1 Thessalonians 5:21"]
+- query: "test everything"
+  expected: ["1 Thessalonians 5:21"]
+
+- query: "what's that line about the lord gives and takes away — maybe worded differently in some translations?"
+  expected: ["Job 1:21"]
+- query: "the lord gives and takes away"
+  expected: ["Job 1:21"]
+
+- query: "verse about though he slay me yet will i trust (rough paraphrase)"
+  expected: ["Job 13:15"]
+- query: "though he slay me yet will i trust"
+  expected: ["Job 13:15"]
+
+- query: "verse about i know that my redeemer lives (rough paraphrase)"
+  expected: ["Job 19:25"]
+- query: "i know that my redeemer lives"
+  expected: ["Job 19:25"]
+
+- query: "isn't there a verse about the darkest valley?"
+  expected: ["Psalms 23:4"]
+- query: "the darkest valley"
+  expected: ["Psalms 23:4"]
+
+- query: "isn't there a verse about cup runs over?"
+  expected: ["Psalms 23:5"]
+- query: "cup runs over"
+  expected: ["Psalms 23:5"]
+
+- query: "isn't there a verse about make me a clean heart?"
+  expected: ["Psalms 51:10"]
+- query: "make me a clean heart"
+  expected: ["Psalms 51:10"]
+
+- query: "verse about taste and see that the lord is good (rough paraphrase)"
+  expected: ["Psalms 34:8"]
+- query: "taste and see that the lord is good"
+  expected: ["Psalms 34:8"]
+
+- query: "verse about this is the day the lord has made (rough paraphrase)"
+  expected: ["Psalms 118:24"]
+- query: "this is the day the lord has made"
+  expected: ["Psalms 118:24"]
+
+- query: "isn't there a verse about your word lights my path?"
+  expected: ["Psalms 119:105"]
+- query: "your word lights my path"
+  expected: ["Psalms 119:105"]
+
+- query: "verse about unless the lord builds the house (rough paraphrase)"
+  expected: ["Psalms 127:1"]
+- query: "unless the lord builds the house"
+  expected: ["Psalms 127:1"]
+
+- query: "verse about children are a heritage from the lord (rough paraphrase)"
+  expected: ["Psalms 127:3"]
+- query: "children are a heritage from the lord"
+  expected: ["Psalms 127:3"]
+
+- query: "isn't there a verse about fearfully and wonderfully made?"
+  expected: ["Psalms 139:14"]
+- query: "fearfully and wonderfully made"
+  expected: ["Psalms 139:14"]
+
+- query: "isn't there a verse about search me o god?"
+  expected: ["Psalms 139:23"]
+- query: "search me o god"
+  expected: ["Psalms 139:23"]
+
+- query: "isn't there a verse about a time for everything?"
+  expected: ["Ecclesiastes 3:1"]
+- query: "a time for everything"
+  expected: ["Ecclesiastes 3:1"]
+
+- query: "verse about time to be born and time to die (rough paraphrase)"
+  expected: ["Ecclesiastes 3:2"]
+- query: "time to be born and time to die"
+  expected: ["Ecclesiastes 3:2"]
+
+- query: "isn't there a verse about meaningless, utterly meaningless?"
+  expected: ["Ecclesiastes 1:2"]
+- query: "meaningless, utterly meaningless"
+  expected: ["Ecclesiastes 1:2"]
+
+- query: "isn't there a verse about nothing new under the sun?"
+  expected: ["Ecclesiastes 1:9"]
+- query: "nothing new under the sun"
+  expected: ["Ecclesiastes 1:9"]
+
+- query: "verse about to everything there is a season (rough paraphrase)"
+  expected: ["Ecclesiastes 3:1"]
+- query: "to everything there is a season"
+  expected: ["Ecclesiastes 3:1"]
+
+- query: "isn't there a verse about iron sharpens iron?"
+  expected: ["Proverbs 27:17"]
+- query: "iron sharpens iron"
+  expected: ["Proverbs 27:17"]
+
+- query: "isn't there a verse about train up a child?"
+  expected: ["Proverbs 22:6"]
+- query: "train up a child"
+  expected: ["Proverbs 22:6"]
+
+- query: "verse about a gentle answer turns away wrath (rough paraphrase)"
+  expected: ["Proverbs 15:1"]
+- query: "a gentle answer turns away wrath"
+  expected: ["Proverbs 15:1"]
+
+- query: "what's that line about fear of the lord is the beginning of wisdom — maybe worded differently in some translations?"
+  expected: ["Proverbs 9:10"]
+- query: "fear of the lord is the beginning of wisdom"
+  expected: ["Proverbs 9:10"]
+
+- query: "isn't there a verse about watch over your heart?"
+  expected: ["Proverbs 4:23"]
+- query: "watch over your heart"
+  expected: ["Proverbs 4:23"]
+
+- query: "isn't there a verse about a wife of noble character?"
+  expected: ["Proverbs 31:10"]
+- query: "a wife of noble character"
+  expected: ["Proverbs 31:10"]
+
+- query: "verse about her children rise up and call her happy (rough paraphrase)"
+  expected: ["Proverbs 31:28"]
+- query: "her children rise up and call her happy"
+  expected: ["Proverbs 31:28"]
+
+- query: "isn't there a verse about here i am send me?"
+  expected: ["Isaiah 6:8"]
+- query: "here i am send me"
+  expected: ["Isaiah 6:8"]
+
+- query: "verse about unto us a child is born (rough paraphrase)"
+  expected: ["Isaiah 9:6"]
+- query: "unto us a child is born"
+  expected: ["Isaiah 9:6"]
+
+- query: "verse about wolf will dwell with the lamb (rough paraphrase)"
+  expected: ["Isaiah 11:6"]
+- query: "wolf will dwell with the lamb"
+  expected: ["Isaiah 11:6"]
+
+- query: "verse about they will soar on wings like eagles (rough paraphrase)"
+  expected: ["Isaiah 40:31"]
+- query: "they will soar on wings like eagles"
+  expected: ["Isaiah 40:31"]
+
+- query: "verse about he was pierced for our transgressions (rough paraphrase)"
+  expected: ["Isaiah 53:5"]
+- query: "he was pierced for our transgressions"
+  expected: ["Isaiah 53:5"]
+
+- query: "verse about all we like sheep have gone astray (rough paraphrase)"
+  expected: ["Isaiah 53:6"]
+- query: "all we like sheep have gone astray"
+  expected: ["Isaiah 53:6"]
+
+- query: "verse about my thoughts are not your thoughts (rough paraphrase)"
+  expected: ["Isaiah 55:8"]
+- query: "my thoughts are not your thoughts"
+  expected: ["Isaiah 55:8"]
+
+- query: "verse about before i formed you in the womb (rough paraphrase)"
+  expected: ["Jeremiah 1:5"]
+- query: "before i formed you in the womb"
+  expected: ["Jeremiah 1:5"]
+
+- query: "verse about call to me and i will answer (rough paraphrase)"
+  expected: ["Jeremiah 33:3"]
+- query: "call to me and i will answer"
+  expected: ["Jeremiah 33:3"]
+
+- query: "isn't there a verse about new covenant?"
+  expected: ["Jeremiah 31:31"]
+- query: "new covenant"
+  expected: ["Jeremiah 31:31"]
+
+- query: "isn't there a verse about valley of dry bones?"
+  expected: ["Ezekiel 37:1"]
+- query: "valley of dry bones"
+  expected: ["Ezekiel 37:1"]
+
+- query: "verse about heart of stone heart of flesh (rough paraphrase)"
+  expected: ["Ezekiel 36:26"]
+- query: "heart of stone heart of flesh"
+  expected: ["Ezekiel 36:26"]
+
+- query: "isn't there a verse about fiery furnace?"
+  expected: ["Daniel 3:17"]
+- query: "fiery furnace"
+  expected: ["Daniel 3:17"]
+
+- query: "isn't there a verse about writing on the wall?"
+  expected: ["Daniel 5:5"]
+- query: "writing on the wall"
+  expected: ["Daniel 5:5"]
+
+- query: "verse about what does the lord require of you (rough paraphrase)"
+  expected: ["Micah 6:8"]
+- query: "what does the lord require of you"
+  expected: ["Micah 6:8"]
+
+- query: "verse about act justly love mercy walk humbly (rough paraphrase)"
+  expected: ["Micah 6:8"]
+- query: "act justly love mercy walk humbly"
+  expected: ["Micah 6:8"]
+
+- query: "what's that line about the righteous will live by faith — maybe worded differently in some translations?"
+  expected: ["Habakkuk 2:4", "Romans 1:17"]
+- query: "the righteous will live by faith"
+  expected: ["Habakkuk 2:4", "Romans 1:17"]
+
+- query: "isn't there a verse about be silent before the lord?"
+  expected: ["Zephaniah 1:7", "Habakkuk 2:20"]
+- query: "be silent before the lord"
+  expected: ["Zephaniah 1:7", "Habakkuk 2:20"]
+
+- query: "verse about not by might nor by power but by my spirit (rough paraphrase)"
+  expected: ["Zechariah 4:6"]
+- query: "not by might nor by power but by my spirit"
+  expected: ["Zechariah 4:6"]
+
+- query: "verse about rejoice greatly o daughter of zion (rough paraphrase)"
+  expected: ["Zechariah 9:9"]
+- query: "rejoice greatly o daughter of zion"
+  expected: ["Zechariah 9:9"]
+
+- query: "verse about i have loved you says the lord (rough paraphrase)"
+  expected: ["Malachi 1:2"]
+- query: "i have loved you says the lord"
+  expected: ["Malachi 1:2"]
+
+- query: "verse about return to me and i will return to you (rough paraphrase)"
+  expected: ["Malachi 3:7"]
+- query: "return to me and i will return to you"
+  expected: ["Malachi 3:7"]
+
+- query: "isn't there a verse about test me in this?"
+  expected: ["Malachi 3:10"]
+- query: "test me in this"
+  expected: ["Malachi 3:10"]
+
+- query: "what's that line about the son of man came to serve — maybe worded differently in some translations?"
+  expected: ["Mark 10:45"]
+- query: "the son of man came to serve"
+  expected: ["Mark 10:45"]
+
+- query: "verse about whoever wants to be first must be last (rough paraphrase)"
+  expected: ["Mark 9:35"]
+- query: "whoever wants to be first must be last"
+  expected: ["Mark 9:35"]
+
+- query: "verse about if anyone has ears to hear (rough paraphrase)"
+  expected: ["Mark 4:23"]
+- query: "if anyone has ears to hear"
+  expected: ["Mark 4:23"]
+
+- query: "isn't there a verse about nothing is impossible with god?"
+  expected: ["Luke 1:37"]
+- query: "nothing is impossible with god"
+  expected: ["Luke 1:37"]
+
+- query: "verse about mary treasured these things in her heart (rough paraphrase)"
+  expected: ["Luke 2:19"]
+- query: "mary treasured these things in her heart"
+  expected: ["Luke 2:19"]
+
+- query: "what's that line about do to others as you would have them do — maybe worded differently in some translations?"
+  expected: ["Luke 6:31"]
+- query: "do to others as you would have them do"
+  expected: ["Luke 6:31"]
+
+- query: "isn't there a verse about physician heal yourself?"
+  expected: ["Luke 4:23"]
+- query: "physician heal yourself"
+  expected: ["Luke 4:23"]
+
+- query: "isn't there a verse about the word became flesh?"
+  expected: ["John 1:14"]
+- query: "the word became flesh"
+  expected: ["John 1:14"]
+
+- query: "verse about in him was life and that life was the light (rough paraphrase)"
+  expected: ["John 1:4"]
+- query: "in him was life and that life was the light"
+  expected: ["John 1:4"]
+
+- query: "verse about grace and truth came through jesus (rough paraphrase)"
+  expected: ["John 1:17"]
+- query: "grace and truth came through jesus"
+  expected: ["John 1:17"]
+
+- query: "isn't there a verse about behold the lamb of god?"
+  expected: ["John 1:29"]
+- query: "behold the lamb of god"
+  expected: ["John 1:29"]
+
+- query: "verse about you must be born from above (rough paraphrase)"
+  expected: ["John 3:7"]
+- query: "you must be born from above"
+  expected: ["John 3:7"]
+
+- query: "isn't there a verse about i am the good shepherd?"
+  expected: ["John 10:11"]
+- query: "i am the good shepherd"
+  expected: ["John 10:11"]
+
+- query: "isn't there a verse about i am the door?"
+  expected: ["John 10:9"]
+- query: "i am the door"
+  expected: ["John 10:9"]
+
+- query: "verse about i am the vine you are the branches (rough paraphrase)"
+  expected: ["John 15:5"]
+- query: "i am the vine you are the branches"
+  expected: ["John 15:5"]
+
+- query: "isn't there a verse about greater love has no one?"
+  expected: ["John 15:13"]
+- query: "greater love has no one"
+  expected: ["John 15:13"]
+
+- query: "verse about you did not choose me but i chose you (rough paraphrase)"
+  expected: ["John 15:16"]
+- query: "you did not choose me but i chose you"
+  expected: ["John 15:16"]
+
+- query: "verse about in this world you will have trouble (rough paraphrase)"
+  expected: ["John 16:33"]
+- query: "in this world you will have trouble"
+  expected: ["John 16:33"]
+
+- query: "isn't there a verse about father forgive them?"
+  expected: ["Luke 23:34"]
+- query: "father forgive them"
+  expected: ["Luke 23:34"]
+
+- query: "isn't there a verse about it is finished?"
+  expected: ["John 19:30"]
+- query: "it is finished"
+  expected: ["John 19:30"]
+
+- query: "verse about he is not here he has risen (rough paraphrase)"
+  expected: ["Luke 24:6"]
+- query: "he is not here he has risen"
+  expected: ["Luke 24:6"]
+
+- query: "isn't there a verse about go into all the world?"
+  expected: ["Mark 16:15"]
+- query: "go into all the world"
+  expected: ["Mark 16:15"]
+
+- query: "isn't there a verse about you will receive power?"
+  expected: ["Acts 1:8"]
+- query: "you will receive power"
+  expected: ["Acts 1:8"]
+
+- query: "isn't there a verse about repent and be baptized?"
+  expected: ["Acts 2:38"]
+- query: "repent and be baptized"
+  expected: ["Acts 2:38"]
+
+- query: "verse about silver and gold i don't have (rough paraphrase)"
+  expected: ["Acts 3:6"]
+- query: "silver and gold i don't have"
+  expected: ["Acts 3:6"]
+
+- query: "verse about saul saul why do you persecute me (rough paraphrase)"
+  expected: ["Acts 9:4"]
+- query: "saul saul why do you persecute me"
+  expected: ["Acts 9:4"]
+
+- query: "verse about i am not ashamed of the gospel (rough paraphrase)"
+  expected: ["Romans 1:16"]
+- query: "i am not ashamed of the gospel"
+  expected: ["Romans 1:16"]
+
+- query: "verse about all have sinned and fall short (rough paraphrase)"
+  expected: ["Romans 3:23"]
+- query: "all have sinned and fall short"
+  expected: ["Romans 3:23"]
+
+- query: "isn't there a verse about while we were still sinners?"
+  expected: ["Romans 5:8"]
+- query: "while we were still sinners"
+  expected: ["Romans 5:8"]
+
+- query: "isn't there a verse about death where is your sting?"
+  expected: ["1 Corinthians 15:55"]
+- query: "death where is your sting"
+  expected: ["1 Corinthians 15:55"]
+
+- query: "what's that line about the greatest of these is love — maybe worded differently in some translations?"
+  expected: ["1 Corinthians 13:13"]
+- query: "the greatest of these is love"
+  expected: ["1 Corinthians 13:13"]
+
+- query: "isn't there a verse about your body is a temple?"
+  expected: ["1 Corinthians 6:19"]
+- query: "your body is a temple"
+  expected: ["1 Corinthians 6:19"]
+
+- query: "isn't there a verse about god chose the foolish things?"
+  expected: ["1 Corinthians 1:27"]
+- query: "god chose the foolish things"
+  expected: ["1 Corinthians 1:27"]
+
+- query: "isn't there a verse about we are more than conquerors?"
+  expected: ["Romans 8:37"]
+- query: "we are more than conquerors"
+  expected: ["Romans 8:37"]
+
+- query: "verse about nothing can separate us from the love (rough paraphrase)"
+  expected: ["Romans 8:38"]
+- query: "nothing can separate us from the love"
+  expected: ["Romans 8:38"]
+
+- query: "verse about present your bodies as living sacrifices (rough paraphrase)"
+  expected: ["Romans 12:1"]
+- query: "present your bodies as living sacrifices"
+  expected: ["Romans 12:1"]
+
+- query: "isn't there a verse about don't conform to this world?"
+  expected: ["Romans 12:2"]
+- query: "don't conform to this world"
+  expected: ["Romans 12:2"]
+
+- query: "isn't there a verse about weep with those who weep?"
+  expected: ["Romans 12:15"]
+- query: "weep with those who weep"
+  expected: ["Romans 12:15"]
+
+- query: "isn't there a verse about overcome evil with good?"
+  expected: ["Romans 12:21"]
+- query: "overcome evil with good"
+  expected: ["Romans 12:21"]
+
+- query: "what's that line about the letter kills but the spirit gives life — maybe worded differently in some translations?"
+  expected: ["2 Corinthians 3:6"]
+- query: "the letter kills but the spirit gives life"
+  expected: ["2 Corinthians 3:6"]
+
+- query: "isn't there a verse about we are ambassadors for christ?"
+  expected: ["2 Corinthians 5:20"]
+- query: "we are ambassadors for christ"
+  expected: ["2 Corinthians 5:20"]
+
+- query: "isn't there a verse about godly sorrow brings repentance?"
+  expected: ["2 Corinthians 7:10"]
+- query: "godly sorrow brings repentance"
+  expected: ["2 Corinthians 7:10"]
+
+- query: "isn't there a verse about thorn in my flesh?"
+  expected: ["2 Corinthians 12:7"]
+- query: "thorn in my flesh"
+  expected: ["2 Corinthians 12:7"]
+
+- query: "verse about i have been crucified with christ (rough paraphrase)"
+  expected: ["Galatians 2:20"]
+- query: "i have been crucified with christ"
+  expected: ["Galatians 2:20"]
+
+- query: "verse about it is for freedom that christ has set us free (rough paraphrase)"
+  expected: ["Galatians 5:1"]
+- query: "it is for freedom that christ has set us free"
+  expected: ["Galatians 5:1"]
+
+- query: "verse about don't be deceived god cannot be mocked (rough paraphrase)"
+  expected: ["Galatians 6:7"]
+- query: "don't be deceived god cannot be mocked"
+  expected: ["Galatians 6:7"]
+
+- query: "isn't there a verse about whatever a man sows?"
+  expected: ["Galatians 6:7"]
+- query: "whatever a man sows"
+  expected: ["Galatians 6:7"]
+
+- query: "isn't there a verse about bear one another's burdens?"
+  expected: ["Galatians 6:2"]
+- query: "bear one another's burdens"
+  expected: ["Galatians 6:2"]
+
+- query: "isn't there a verse about one body one spirit?"
+  expected: ["Ephesians 4:4"]
+- query: "one body one spirit"
+  expected: ["Ephesians 4:4"]
+
+- query: "isn't there a verse about be angry but don't sin?"
+  expected: ["Ephesians 4:26"]
+- query: "be angry but don't sin"
+  expected: ["Ephesians 4:26"]
+
+- query: "verse about don't let the sun go down on your anger (rough paraphrase)"
+  expected: ["Ephesians 4:26"]
+- query: "don't let the sun go down on your anger"
+  expected: ["Ephesians 4:26"]
+
+- query: "isn't there a verse about speak the truth in love?"
+  expected: ["Ephesians 4:15"]
+- query: "speak the truth in love"
+  expected: ["Ephesians 4:15"]
+
+- query: "verse about to live is christ to die is gain (rough paraphrase)"
+  expected: ["Philippians 1:21"]
+- query: "to live is christ to die is gain"
+  expected: ["Philippians 1:21"]
+
+- query: "verse about work out your salvation with fear and trembling (rough paraphrase)"
+  expected: ["Philippians 2:12"]
+- query: "work out your salvation with fear and trembling"
+  expected: ["Philippians 2:12"]
+
+- query: "isn't there a verse about every knee will bow?"
+  expected: ["Philippians 2:10"]
+- query: "every knee will bow"
+  expected: ["Philippians 2:10"]
+
+- query: "isn't there a verse about press on toward the goal?"
+  expected: ["Philippians 3:14"]
+- query: "press on toward the goal"
+  expected: ["Philippians 3:14"]
+
+- query: "verse about whatever is true whatever is noble (rough paraphrase)"
+  expected: ["Philippians 4:8"]
+- query: "whatever is true whatever is noble"
+  expected: ["Philippians 4:8"]
+
+- query: "verse about i have learned to be content (rough paraphrase)"
+  expected: ["Philippians 4:11"]
+- query: "i have learned to be content"
+  expected: ["Philippians 4:11"]
+
+- query: "verse about my god will supply all your needs (rough paraphrase)"
+  expected: ["Philippians 4:19"]
+- query: "my god will supply all your needs"
+  expected: ["Philippians 4:19"]
+
+- query: "verse about set your minds on things above (rough paraphrase)"
+  expected: ["Colossians 3:2"]
+- query: "set your minds on things above"
+  expected: ["Colossians 3:2"]
+
+- query: "verse about whatever you do work at it with all your heart (rough paraphrase)"
+  expected: ["Colossians 3:23"]
+- query: "whatever you do work at it with all your heart"
+  expected: ["Colossians 3:23"]
+
+- query: "verse about let your conversation be always full of grace (rough paraphrase)"
+  expected: ["Colossians 4:6"]
+- query: "let your conversation be always full of grace"
+  expected: ["Colossians 4:6"]
+
+- query: "isn't there a verse about seasoned with salt?"
+  expected: ["Colossians 4:6"]
+- query: "seasoned with salt"
+  expected: ["Colossians 4:6"]
+
+- query: "isn't there a verse about encourage one another daily?"
+  expected: ["Hebrews 3:13"]
+- query: "encourage one another daily"
+  expected: ["Hebrews 3:13"]
+
+- query: "what's that line about the word of god is living and active — maybe worded differently in some translations?"
+  expected: ["Hebrews 4:12"]
+- query: "the word of god is living and active"
+  expected: ["Hebrews 4:12"]
+
+- query: "isn't there a verse about sharper than any two-edged sword?"
+  expected: ["Hebrews 4:12"]
+- query: "sharper than any two-edged sword"
+  expected: ["Hebrews 4:12"]
+
+- query: "verse about faith is the substance of things hoped for (rough paraphrase)"
+  expected: ["Hebrews 11:1"]
+- query: "faith is the substance of things hoped for"
+  expected: ["Hebrews 11:1"]
+
+- query: "verse about without faith it is impossible to please god (rough paraphrase)"
+  expected: ["Hebrews 11:6"]
+- query: "without faith it is impossible to please god"
+  expected: ["Hebrews 11:6"]
+
+- query: "isn't there a verse about cloud of witnesses?"
+  expected: ["Hebrews 12:1"]
+- query: "cloud of witnesses"
+  expected: ["Hebrews 12:1"]
+
+- query: "isn't there a verse about run with perseverance the race?"
+  expected: ["Hebrews 12:1"]
+- query: "run with perseverance the race"
+  expected: ["Hebrews 12:1"]
+
+- query: "verse about jesus the author and finisher of our faith (rough paraphrase)"
+  expected: ["Hebrews 12:2"]
+- query: "jesus the author and finisher of our faith"
+  expected: ["Hebrews 12:2"]
+
+- query: "isn't there a verse about god disciplines those he loves?"
+  expected: ["Hebrews 12:6"]
+- query: "god disciplines those he loves"
+  expected: ["Hebrews 12:6"]
+
+- query: "isn't there a verse about don't forget to entertain strangers?"
+  expected: ["Hebrews 13:2"]
+- query: "don't forget to entertain strangers"
+  expected: ["Hebrews 13:2"]
+
+- query: "verse about jesus christ the same yesterday today and forever (rough paraphrase)"
+  expected: ["Hebrews 13:8"]
+- query: "jesus christ the same yesterday today and forever"
+  expected: ["Hebrews 13:8"]
+
+- query: "verse about count it all joy when you face trials (rough paraphrase)"
+  expected: ["James 1:2"]
+- query: "count it all joy when you face trials"
+  expected: ["James 1:2"]
+
+- query: "verse about if any of you lacks wisdom (rough paraphrase)"
+  expected: ["James 1:5"]
+- query: "if any of you lacks wisdom"
+  expected: ["James 1:5"]
+
+- query: "what's that line about be quick to listen slow to speak — maybe worded differently in some translations?"
+  expected: ["James 1:19"]
+- query: "be quick to listen slow to speak"
+  expected: ["James 1:19"]
+
+- query: "isn't there a verse about the tongue is a fire?"
+  expected: ["James 3:6"]
+- query: "the tongue is a fire"
+  expected: ["James 3:6"]
+
+- query: "verse about resist the devil and he will flee (rough paraphrase)"
+  expected: ["James 4:7"]
+- query: "resist the devil and he will flee"
+  expected: ["James 4:7"]
+
+- query: "isn't there a verse about draw near to god?"
+  expected: ["James 4:8"]
+- query: "draw near to god"
+  expected: ["James 4:8"]
+
+- query: "isn't there a verse about your life is a mist?"
+  expected: ["James 4:14"]
+- query: "your life is a mist"
+  expected: ["James 4:14"]
+
+- query: "what's that line about the prayer of a righteous person is powerful — maybe worded differently in some translations?"
+  expected: ["James 5:16"]
+- query: "the prayer of a righteous person is powerful"
+  expected: ["James 5:16"]
+
+- query: "verse about born from above to a living hope (rough paraphrase)"
+  expected: ["1 Peter 1:3"]
+- query: "born from above to a living hope"
+  expected: ["1 Peter 1:3"]
+
+- query: "verse about like newborn babies crave pure spiritual milk (rough paraphrase)"
+  expected: ["1 Peter 2:2"]
+- query: "like newborn babies crave pure spiritual milk"
+  expected: ["1 Peter 2:2"]
+
+- query: "isn't there a verse about you are a chosen people?"
+  expected: ["1 Peter 2:9"]
+- query: "you are a chosen people"
+  expected: ["1 Peter 2:9"]
+
+- query: "isn't there a verse about royal priesthood?"
+  expected: ["1 Peter 2:9"]
+- query: "royal priesthood"
+  expected: ["1 Peter 2:9"]
+
+- query: "verse about by his wounds you have been healed (rough paraphrase)"
+  expected: ["1 Peter 2:24"]
+- query: "by his wounds you have been healed"
+  expected: ["1 Peter 2:24"]
+
+- query: "verse about always be prepared to give an answer (rough paraphrase)"
+  expected: ["1 Peter 3:15"]
+- query: "always be prepared to give an answer"
+  expected: ["1 Peter 3:15"]
+
+- query: "what's that line about love covers a multitude of sins — maybe worded differently in some translations?"
+  expected: ["1 Peter 4:8"]
+- query: "love covers a multitude of sins"
+  expected: ["1 Peter 4:8"]
+
+- query: "verse about humble yourselves under god's mighty hand (rough paraphrase)"
+  expected: ["1 Peter 5:6"]
+- query: "humble yourselves under god's mighty hand"
+  expected: ["1 Peter 5:6"]
+
+- query: "isn't there a verse about be alert and sober minded?"
+  expected: ["1 Peter 5:8"]
+- query: "be alert and sober minded"
+  expected: ["1 Peter 5:8"]
+
+- query: "verse about your enemy the devil prowls around (rough paraphrase)"
+  expected: ["1 Peter 5:8"]
+- query: "your enemy the devil prowls around"
+  expected: ["1 Peter 5:8"]
+
+- query: "verse about his divine power has given us everything (rough paraphrase)"
+  expected: ["2 Peter 1:3"]
+- query: "his divine power has given us everything"
+  expected: ["2 Peter 1:3"]
+
+- query: "verse about make every effort to add to your faith (rough paraphrase)"
+  expected: ["2 Peter 1:5"]
+- query: "make every effort to add to your faith"
+  expected: ["2 Peter 1:5"]
+
+- query: "verse about with the lord a day is like a thousand years (rough paraphrase)"
+  expected: ["2 Peter 3:8"]
+- query: "with the lord a day is like a thousand years"
+  expected: ["2 Peter 3:8"]
+
+- query: "what's that line about the lord is not slow in keeping his promise — maybe worded differently in some translations?"
+  expected: ["2 Peter 3:9"]
+- query: "the lord is not slow in keeping his promise"
+  expected: ["2 Peter 3:9"]
+
+- query: "isn't there a verse about if we confess our sins?"
+  expected: ["1 John 1:9"]
+- query: "if we confess our sins"
+  expected: ["1 John 1:9"]
+
+- query: "verse about if we walk in the light (rough paraphrase)"
+  expected: ["1 John 1:7"]
+- query: "if we walk in the light"
+  expected: ["1 John 1:7"]
+
+- query: "isn't there a verse about don't love the world?"
+  expected: ["1 John 2:15"]
+- query: "don't love the world"
+  expected: ["1 John 2:15"]
+
+- query: "what's that line about the world and its desires pass away — maybe worded differently in some translations?"
+  expected: ["1 John 2:17"]
+- query: "the world and its desires pass away"
+  expected: ["1 John 2:17"]
+
+- query: "verse about see what great love the father has lavished (rough paraphrase)"
+  expected: ["1 John 3:1"]
+- query: "see what great love the father has lavished"
+  expected: ["1 John 3:1"]
+
+- query: "verse about let us not love with words (rough paraphrase)"
+  expected: ["1 John 3:18"]
+- query: "let us not love with words"
+  expected: ["1 John 3:18"]
+
+- query: "verse about there is no fear in love (rough paraphrase)"
+  expected: ["1 John 4:18"]
+- query: "there is no fear in love"
+  expected: ["1 John 4:18"]
+
+- query: "verse about this is love for god to keep his commands (rough paraphrase)"
+  expected: ["1 John 5:3"]
+- query: "this is love for god to keep his commands"
+  expected: ["1 John 5:3"]
+
+- query: "what's that line about the world has been crucified to me — maybe worded differently in some translations?"
+  expected: ["Galatians 6:14"]
+- query: "the world has been crucified to me"
+  expected: ["Galatians 6:14"]
+
+- query: "verse about i can do everything through him who gives me strength (rough paraphrase)"
+  expected: ["Philippians 4:13"]
+- query: "i can do everything through him who gives me strength"
+  expected: ["Philippians 4:13"]
+
+- query: "isn't there a verse about the lord is faithful?"
+  expected: ["2 Thessalonians 3:3"]
+- query: "the lord is faithful"
+  expected: ["2 Thessalonians 3:3"]
+
+- query: "verse about fight the good fight of faith (rough paraphrase)"
+  expected: ["1 Timothy 6:12"]
+- query: "fight the good fight of faith"
+  expected: ["1 Timothy 6:12"]
+
+- query: "verse about i have fought the good fight (rough paraphrase)"
+  expected: ["2 Timothy 4:7"]
+- query: "i have fought the good fight"
+  expected: ["2 Timothy 4:7"]
+
+- query: "isn't there a verse about all scripture is god-breathed?"
+  expected: ["2 Timothy 3:16"]
+- query: "all scripture is god-breathed"
+  expected: ["2 Timothy 3:16"]
+
+- query: "what's that line about be prepared in season and out of season — maybe worded differently in some translations?"
+  expected: ["2 Timothy 4:2"]
+- query: "be prepared in season and out of season"
+  expected: ["2 Timothy 4:2"]
+
+- query: "verse about god has not given us a spirit of fear (rough paraphrase)"
+  expected: ["2 Timothy 1:7"]
+- query: "god has not given us a spirit of fear"
+  expected: ["2 Timothy 1:7"]
+
+- query: "what's that line about the grace of god has appeared — maybe worded differently in some translations?"
+  expected: ["Titus 2:11"]
+- query: "the grace of god has appeared"
+  expected: ["Titus 2:11"]
+
+- query: "verse about he saved us through the washing of rebirth (rough paraphrase)"
+  expected: ["Titus 3:5"]
+- query: "he saved us through the washing of rebirth"
+  expected: ["Titus 3:5"]
+
+- query: "verse about i am the alpha and the omega (rough paraphrase)"
+  expected: ["Revelation 1:8", "Revelation 22:13"]
+- query: "i am the alpha and the omega"
+  expected: ["Revelation 1:8", "Revelation 22:13"]
+
+- query: "verse about i stand at the door and knock (rough paraphrase)"
+  expected: ["Revelation 3:20"]
+- query: "i stand at the door and knock"
+  expected: ["Revelation 3:20"]
+
+- query: "verse about a new heaven and a new earth (rough paraphrase)"
+  expected: ["Revelation 21:1"]
+- query: "a new heaven and a new earth"
+  expected: ["Revelation 21:1"]
+
+- query: "isn't there a verse about he will wipe every tear?"
+  expected: ["Revelation 21:4"]
+- query: "he will wipe every tear"
+  expected: ["Revelation 21:4"]
+
+- query: "isn't there a verse about no more death or mourning?"
+  expected: ["Revelation 21:4"]
+- query: "no more death or mourning"
+  expected: ["Revelation 21:4"]
+
+- query: "isn't there a verse about the tree of life?"
+  expected: ["Revelation 22:2", "Genesis 2:9"]
+- query: "the tree of life"
+  expected: ["Revelation 22:2", "Genesis 2:9"]
+
+- query: "isn't there a verse about come lord jesus?"
+  expected: ["Revelation 22:20"]
+- query: "come lord jesus"
+  expected: ["Revelation 22:20"]
