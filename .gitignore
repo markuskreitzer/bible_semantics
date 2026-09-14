@@ -171,3 +171,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Generated Bible datasets
+/data/*.jsonl
+/data/*.jsonl.*
+/data/parquet/*.parquet
